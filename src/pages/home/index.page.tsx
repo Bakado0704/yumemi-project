@@ -11,7 +11,6 @@ export default function Home() {
       </Head>
       <main>
         <p>Hello Yumemi san</p>
-        <p>Hello Yumemi san</p>
       </main>
     </>
   );
