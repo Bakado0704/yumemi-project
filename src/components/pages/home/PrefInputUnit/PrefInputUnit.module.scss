@@ -1,0 +1,10 @@
+@use "@/styles/mixin" as *;
+
+.prefContainer {
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  @include mq(md) {
+    gap: 1.2rem;
+  }
+}
