@@ -1,0 +1,17 @@
+@use "@/styles/mixin" as *;
+
+.sectionWrap {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.sectionWrapInner {
+  max-width: 108rem;
+  height: 100%;
+  padding: 0 4rem;
+  margin: 0 auto;
+
+  @include mq(md) {
+    padding: 0 1.6rem;
+  }
+}
