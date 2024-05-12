@@ -11,6 +11,10 @@
     "lint:prettier": "prettier --check --ignore-unknown src",
     "format": "npm run lint:eslint -- --fix && prettier --write --list-different src"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache",
+    "*.**": "prettier --check --ignore-unknown"
+  },
   "dependencies": {
     "next": "14.2.3",
     "react": "^18",
@@ -28,6 +32,7 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.7.1",
     "sass": "^1.72.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "husky": "^8.0.3"
   }
 }
