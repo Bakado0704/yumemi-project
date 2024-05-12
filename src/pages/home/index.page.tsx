@@ -12,9 +12,7 @@ const Home = () => {
   const [prefCodes, setPrefCodes] = useState<number[]>([]);
 
   useEffect(() => {
-    if (prefCodes.length > 0) {
-      getPopulation(prefCodes).then(setPopulationData);
-    }
+    getPopulation(prefCodes).then(setPopulationData);
   }, [prefCodes]);
 
   console.log(populationData);
