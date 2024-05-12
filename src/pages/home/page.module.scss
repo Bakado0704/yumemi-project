@@ -1,0 +1,9 @@
+@use "@/styles/mixin" as *;
+
+.prefContainer {
+  padding: 4rem 0;
+
+  @include mq(md) {
+    padding: 2rem 0;
+  }
+}
