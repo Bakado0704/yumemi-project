@@ -1,0 +1,21 @@
+@use "@/styles/mixin" as *;
+
+.container {
+  position: relative;
+  padding: 4rem 0;
+
+  @include mq(md) {
+    padding: 2rem 0;
+  }
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--w2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
