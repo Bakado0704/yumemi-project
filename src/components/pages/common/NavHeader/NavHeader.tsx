@@ -11,7 +11,7 @@ const NavHeader = () => {
         className={styles.headerContainer}
       >
         <Typography color="w1" fontWeight={600} fontSize="1.6rem">
-          都道府県別の総人口推移グラフ
+          都道府県別の人口推移グラフ
         </Typography>
         <div className={styles.bg} />
       </FlexBox>
