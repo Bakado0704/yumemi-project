@@ -1,24 +1,13 @@
-import { useState } from "react";
-
 import classNames from "classnames";
 
 import { FlexBox, Typography } from "@/components/common";
+import { usePrefItem } from "@/hooks/home/usePrefItem";
 
 import styles from "./InputItem.module.scss";
 import { PrefInputProps } from "./InputItem.types";
 
 const InputItem = ({ pref, setPrefCodes }: PrefInputProps) => {
-  const [checked, setChecked] = useState(false);
-
-  const onChange = (prefCode: number) => {
-    setPrefCodes((prev) => {
-      if (prev.includes(prefCode)) {
-        return prev.filter((code) => code !== prefCode);
-      }
-      return [...prev, prefCode];
-    });
-    setChecked((state) => !state);
-  };
+  const { checked, onChange } = usePrefItem(setPrefCodes);
 
   return (
     <FlexBox
