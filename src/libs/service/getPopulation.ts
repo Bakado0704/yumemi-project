@@ -17,8 +17,8 @@ export const getPopulation = async (
         prefectureData.find((prefecture) => prefecture.prefCode === prefCode)
           ?.prefName || "";
 
-      const data = await fetchPopulationByPrefCode(prefCode);
-      const filteredDataBySortKey = data?.data.filter(
+      const fetchedData = await fetchPopulationByPrefCode(prefCode);
+      const filteredDataBySortKey = fetchedData?.data.filter(
         (data) => data.label === sortKey
       );
       const prefData = years.map((year) => {
