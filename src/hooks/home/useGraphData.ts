@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { GraphLayoutType } from "@/types/application/population.types";
+import { GraphLayoutType } from "@/types/application/graphLayout.types";
 
 export const useGraphData = (populationData: GraphLayoutType[]) => {
   const [graphLayout, setGraphLayout] = useState({

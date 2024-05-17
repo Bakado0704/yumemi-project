@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getPopulation } from "@/libs/service/getPopulation";
-import { GraphLayoutType } from "@/types/application/population.types";
+import { GraphLayoutType } from "@/types/application/graphLayout.types";
 
 export const usePopulationData = () => {
   const [sortKey, setSortKey] = useState<string>("総人口");

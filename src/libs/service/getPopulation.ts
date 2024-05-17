@@ -1,8 +1,6 @@
 import { prefectureData } from "@/data/prefectureData";
-import {
-  GraphLayoutType,
-  PopulationType,
-} from "@/types/application/population.types";
+import { GraphLayoutType } from "@/types/application/graphLayout.types";
+import { PopulationType } from "@/types/application/population.types";
 
 import { fetchPopulationByPrefCode } from "../api/fetchPopulationByPrefCode";
 

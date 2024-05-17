@@ -5,8 +5,3 @@ export type PopulationType = {
     value: number;
   }[];
 };
-
-export type GraphLayoutType = {
-  year: number;
-  [key: string]: number;
-};
