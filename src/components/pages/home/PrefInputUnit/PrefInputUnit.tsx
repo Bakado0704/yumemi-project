@@ -1,7 +1,7 @@
 import { FlexBox, LeftBorderTitle } from "@/components/common";
 import { prefectureData } from "@/data/prefectureData";
 
-import InputItem from "./InputItem/InputItem";
+import { InputItem } from "./InputItem";
 import styles from "./PrefInputUnit.module.scss";
 import { PrefInputProps } from "./PrefInputUnit.types";
 
